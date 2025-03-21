@@ -91,7 +91,6 @@ console.log(CemberinAlani(15, pi));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-
 let ucetambolunenler,
   enkucuk,
   enbuyuk,
@@ -118,7 +117,6 @@ console.log("En büyük sayı:", enbuyuk);
 console.log("En küçük sayı:", enkucuk);
 
 // 3b çözümü:
-
 ucetambolunenler = [];
 sayilar.forEach(sayi => {
   if (sayi % 3 === 0) {
@@ -127,28 +125,21 @@ sayilar.forEach(sayi => {
 });
 
 // 3c çözümü:
-
 ucebolunenlerintoplami = 0;
-
 ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
-
 console.log("3'e tam bölünen sayıların toplamı:", ucebolunenlerintoplami);
 
 // 3d çözümü
-
 besyuzdenkucuksayilar = [];
 besyuzdenkucuksayilar = sayilar.filter(sayi => sayi < 500);
 console.log("500'den küçük sayılar:", besyuzdenkucuksayilar);
 
 // 3e çözümü
-
 siralisayilar = [];
 siralisayilar = [...besyuzdenkucuksayilar].sort((a, b) => a - b);
 console.log("Küçükten büyüğe sıralanmış sayılar:", siralisayilar);
 
-
-// 3f çözümü
-
+// 3f 
 tekraredensayilar = [];
 let sayac = {};
 
@@ -161,7 +152,6 @@ for (let sayi in sayac) {
     tekraredensayilar.push(`${sayi} sayısı ${sayac[sayi]} kere tekrar edilmiştir`);
 }
 console.log("Tekrar eden sayılar:", tekraredensayilar);
-
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
